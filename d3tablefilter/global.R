@@ -1,0 +1,7 @@
+library("shiny")
+library("foreign")
+library(shiny)
+library(htmlwidgets)
+library(D3TableFilter)
+library(shinydashboard)
+library(leaflet)
