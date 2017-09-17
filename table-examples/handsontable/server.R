@@ -27,4 +27,3 @@ shinyServer(function(input, output, session) {
       rhandsontable(DF, useTypes = as.logical(input$useType), stretchH = "all")
   })
 })
-

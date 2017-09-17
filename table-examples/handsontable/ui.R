@@ -4,14 +4,12 @@ shinyUI(fluidPage(
   titlePanel("Handsontable"),
   sidebarLayout(
     sidebarPanel(
-      helpText("Change a cell comment using the right-click menu. ",
-               "Note that deleting a comment does not currently fire ",
-               "a callback."),
-      actionButton("exportData", "Export Data"),
-      actionButton("exportComments", "Export Comments")
+      helpText("Handsontable demo output. Column add/delete does work ",
+               "for tables with defined column properties, including type."),
+      radioButtons("useType", "Use Data Types", c("TRUE", "FALSE"))
     ),
     mainPanel(
-      rHandsontableOutput("hot")
+      rHandsontableOutput("hot", width = 350)
     )
   )
 ))
